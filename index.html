@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishi Solutions | Transforming Businesses Through AI & Technology</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Nishi Solutions engineers premium AI solutions, software development, cloud services, and digital transformation for modern enterprises.">
+  <meta name="keywords" content="Nishi Solutions, Enterprise AI, Web Development, Mobile App Development, Cloud Solutions, Data Analytics, IT Consulting">
+  <meta name="author" content="Nishi Solutions">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nishi Solutions | Transforming Businesses Through AI & Technology">
+  <meta property="og:description" content="Innovative AI solutions, software development, cloud services, and digital transformation for modern enterprises.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+  <!-- Global SVG Definitions for Nishi Logo Gradients -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="logo-green" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#22C55E" />
+        <stop offset="100%" stop-color="#86EFAC" />
+      </linearGradient>
+      <linearGradient id="logo-purple" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="#8E2DE2" />
+        <stop offset="100%" stop-color="#D946A3" />
+      </linearGradient>
+      <linearGradient id="logo-orange" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#F97316" />
+        <stop offset="100%" stop-color="#FDBA74" />
+      </linearGradient>
+      <linearGradient id="logo-blue" x1="100%" y1="50%" x2="0%" y2="50%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#1D4ED8" />
+      </linearGradient>
+      <filter id="logo-shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="-1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-glow-orb bg-glow-blue" style="top: 8%; left: -12%;"></div>
+  <div class="bg-glow-orb bg-glow-purple" style="top: 35%; right: -12%;"></div>
+  <div class="bg-glow-orb bg-glow-green" style="bottom: 12%; left: 8%;"></div>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-wrapper">
+        <img src="logo.png?v=2" alt="Nishi Solutions Logo" class="logo-icon-img">
+        <span class="logo-text">Nishi<span>Solutions</span></span>
+      </a>
+
+      <!-- Menu links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle visual theme mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-secondary nav-cta">
+          <span>Get Started</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-brand-area">
+            <img src="logo.png?v=2" alt="Nishi Solutions Logo" class="hero-brand-logo">
+          </div>
+          <div class="hero-badge">AI & Digital Transformation</div>
+          <h1 class="hero-title">Transforming Businesses Through AI & Technology</h1>
+          <p class="hero-desc">Innovative AI solutions, software development, cloud services, and digital transformation for modern enterprises.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get Started</span>
+              <i data-lucide="compass"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Schedule Consultation</span>
+              <i data-lucide="calendar"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive AI Particle Visual -->
+        <div class="hero-visual">
+          <div class="hero-mesh-bg"></div>
+          <canvas class="neural-canvas" id="neural-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-content">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">Engineered for Excellence</h2>
+          <p class="about-text">Nishi Solutions is a leading AI and Digital Transformation agency. We combine innovative technical frameworks, product design principles, and enterprise security compliance to engineer architectures that build long-term business equity.</p>
+          
+          <div class="about-bullets">
+            <div class="about-bullet">
+              <i data-lucide="check-circle-2"></i>
+              <div class="about-bullet-text">
+                <h4>Our Mission</h4>
+                <p>To empower global enterprises by building secure, intelligent, and scalable technological ecosystems.</p>
+              </div>
+            </div>
+            <div class="about-bullet">
+              <i data-lucide="check-circle-2"></i>
+              <div class="about-bullet-text">
+                <h4>Our Vision</h4>
+                <p>To lead the next wave of industrial automation and software development with zero-compromise security.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            <span>Learn Our Story</span>
+          </a>
+        </div>
+
+        <div class="about-cards-grid">
+          <!-- Why Us card 1 -->
+          <div class="about-card glass-panel">
+            <div class="about-card-icon">
+              <i data-lucide="cpu"></i>
+            </div>
+            <h4>Innovation Driven</h4>
+            <p>We leverage cutting-edge neural models and serverless database clusters to ensure your products stay ahead.</p>
+          </div>
+
+          <!-- Why Us card 2 -->
+          <div class="about-card glass-panel">
+            <div class="about-card-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h4>Enterprise Security</h4>
+            <p>Our codebases comply with strict SOC 2, HIPAA, and GDPR standards, protecting customer data at all endpoints.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What We Do</span>
+          <h2 class="section-title">Comprehensive Tech Capabilities</h2>
+          <p class="section-desc">We deliver custom-built software architectures optimized for high-performance and business scaling.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="brain"></i>
+            </div>
+            <h3 class="service-title">Artificial Intelligence Solutions</h3>
+            <p class="service-desc">Integrate LLMs, construct custom neural agents, and deploy predictive classification analytics pipelines.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="globe"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">Develop modern, performant, and responsive web platforms utilizing optimized micro-frontend architectures.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="smartphone"></i>
+            </div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-desc">Build hybrid and native iOS/Android mobile applications configured for speed, offline capability, and smooth transitions.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3 class="service-title">Cloud Solutions</h3>
+            <p class="service-desc">Optimize multi-cloud clusters, orchestrate secure CI/CD loops, and maintain zero-trust edge networks.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="bar-chart-2"></i>
+            </div>
+            <h3 class="service-title">Data Analytics</h3>
+            <p class="service-desc">Process millions of transactional events using high-throughput data lakes and clear performance telemetry dashboards.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card glass-panel" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.08">
+            <div class="service-glow"></div>
+            <div class="service-icon-box">
+              <i data-lucide="file-text"></i>
+            </div>
+            <h3 class="service-title">IT Consulting</h3>
+            <p class="service-desc">Audit IT infrastructures, define risk mitigation blueprints, and structure digital scaling roadmaps.</p>
+            <a href="#contact" class="service-link">
+              <span>Explore Solution</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section">
+      <div class="container tech-container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Tech Stack</span>
+          <h2 class="section-title">Architected on Modern Foundations</h2>
+          <p class="section-desc">We leverage state-of-the-art frameworks and databases to deliver security, speed, and clean code.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item glass-panel t-react">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12a4 4 0 1 0 8 0 4 4 0 1 0-8 0"></path></svg>
+            <span>React</span>
+          </div>
+          <div class="tech-item glass-panel t-node">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 7.5 22 16.5 12 22 2 16.5 2 7.5 12 2"></polygon></svg>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item glass-panel t-python">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path></svg>
+            <span>Python</span>
+          </div>
+          <div class="tech-item glass-panel t-java">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span>Java</span>
+          </div>
+          <div class="tech-item glass-panel t-aws">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+            <span>AWS</span>
+          </div>
+          <div class="tech-item glass-panel t-azure">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg>
+            <span>Azure</span>
+          </div>
+          <div class="tech-item glass-panel t-docker">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"></rect></svg>
+            <span>Docker</span>
+          </div>
+          <div class="tech-item glass-panel t-k8s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+            <span>Kubernetes</span>
+          </div>
+          <div class="tech-item glass-panel t-tf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 2 18 2 22 8 12 22 2 8 6 2"></polygon></svg>
+            <span>TensorFlow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Case Studies</span>
+          <h2 class="section-title">Our Featured Enterprise Projects</h2>
+          <p class="section-desc">Explore how Nishi Solutions resolves complex system challenges to establish real business value.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Portfolio 1 -->
+          <div class="portfolio-card glass-panel">
+            <div class="portfolio-visual">
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Custom Dashboard Illustration -->
+                <rect x="20" y="20" width="360" height="210" rx="8" fill="var(--bg-secondary)" stroke="var(--border)" stroke-width="2"/>
+                <line x1="20" y1="60" x2="380" y2="60" stroke="var(--border)" stroke-width="1.5"/>
+                <!-- Chart curves -->
+                <path d="M 40,180 C 100,120 150,190 200,110 C 250,70 300,140 360,90" fill="none" stroke="url(#logo-purple)" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="200" cy="110" r="5" fill="var(--pink)" filter="drop-shadow(0 0 8px var(--pink))"/>
+                <circle cx="360" cy="90" r="5" fill="var(--purple)" filter="drop-shadow(0 0 8px var(--purple))"/>
+                <!-- Labels -->
+                <rect x="40" y="32" width="80" height="12" rx="4" fill="var(--border)" opacity="0.5"/>
+                <rect x="300" y="32" width="60" height="12" rx="4" fill="url(#logo-purple)"/>
+              </svg>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">AI Automation</span>
+                <span class="portfolio-tag">Fintech</span>
+              </div>
+              <h3 class="portfolio-title">Cognitive Document Extraction Suite</h3>
+              <p class="portfolio-desc">We engineered a self-learning LLM-based parser that handles and structures invoice documents from global branches with over 99.8% precision, cutting transaction latency down to sub-seconds.</p>
+              <div class="portfolio-meta">
+                <div class="portfolio-stat">
+                  <span class="portfolio-stat-num">+80%</span>
+                  <span class="portfolio-stat-label">Automation Gain</span>
+                </div>
+                <div class="portfolio-stat">
+                  <span class="portfolio-stat-num">-65%</span>
+                  <span class="portfolio-stat-label">Process Cost</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="portfolio-card glass-panel">
+            <div class="portfolio-visual">
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Custom Supply Chain Analytics Illustration -->
+                <rect x="20" y="20" width="360" height="210" rx="8" fill="var(--bg-secondary)" stroke="var(--border)" stroke-width="2"/>
+                <line x1="20" y1="60" x2="380" y2="60" stroke="var(--border)" stroke-width="1.5"/>
+                <!-- Bars representing inventory -->
+                <rect x="45" y="140" width="25" height="60" rx="4" fill="rgba(59, 130, 246, 0.15)" stroke="var(--blue)" stroke-width="1.5"/>
+                <rect x="95" y="110" width="25" height="90" rx="4" fill="rgba(59, 130, 246, 0.15)" stroke="var(--blue)" stroke-width="1.5"/>
+                <rect x="145" y="80" width="25" height="120" rx="4" fill="url(#logo-blue)"/>
+                <rect x="195" y="120" width="25" height="80" rx="4" fill="rgba(34, 197, 94, 0.15)" stroke="var(--green)" stroke-width="1.5"/>
+                <rect x="245" y="90" width="25" height="110" rx="4" fill="rgba(34, 197, 94, 0.15)" stroke="var(--green)" stroke-width="1.5"/>
+                <rect x="295" y="60" width="25" height="140" rx="4" fill="url(#logo-green)"/>
+                <!-- Text mocks -->
+                <rect x="40" y="32" width="70" height="12" rx="4" fill="var(--border)" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Predictive Analytics</span>
+                <span class="portfolio-tag">Logistics</span>
+              </div>
+              <h3 class="portfolio-title">Real-Time Supply Chain Predictor</h3>
+              <p class="portfolio-desc">We constructed an edge telemetry framework parsing stock flows, routing variables, and port delays to forecast inventory needs, lowering write-down losses by millions yearly.</p>
+              <div class="portfolio-meta">
+                <div class="portfolio-stat">
+                  <span class="portfolio-stat-num">99.9%</span>
+                  <span class="portfolio-stat-label">Model Uptime</span>
+                </div>
+                <div class="portfolio-stat">
+                  <span class="portfolio-stat-num">-25%</span>
+                  <span class="portfolio-stat-label">Inventory Waste</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Statistics -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Performance Indicators</span>
+          <h2 class="section-title">Scale and Trust in Numbers</h2>
+          <p class="section-desc">Our benchmarks validate our commitment to software performance, agility, and long-term partnerships.</p>
+        </div>
+
+        <div class="stats-grid glass-panel">
+          <div class="stat-item">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Active Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="99">0</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="24">0</div>
+            <div class="stat-label">Support Hours</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Client Telemetry</span>
+          <h2 class="section-title">Trusted by Modern Technology Teams</h2>
+          <p class="section-desc">Hear how we help companies modernize legacy backends, audit structures, and transition to AI.</p>
+        </div>
+
+        <div class="testimonials-carousel" id="testimonials-carousel">
+          <div class="testimonials-track" id="testimonials-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">"Nishi Solutions transformed our server database clusters, allowing us to roll out serverless updates without checking check-in cycles. Their team operates with extreme velocity and premium execution standards."</p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-user">
+                    <div class="user-avatar">
+                      <svg viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="18" fill="var(--bg-primary)"></circle>
+                        <circle cx="18" cy="14" r="6" fill="url(#logo-purple)"></circle>
+                        <path d="M8 28c0-5 6-6 10-6s10 1 10 6" fill="url(#logo-purple)"></path>
+                      </svg>
+                    </div>
+                    <div class="user-info">
+                      <h4>Sarah Jenkins</h4>
+                      <p>VP of Infrastructure, Apex Labs</p>
+                    </div>
+                  </div>
+                  <div class="client-logo">APEX LABS</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">"Partnering with Nishi Solutions to build our predictive intelligence portal reclaims up to 25% waste in daily procurement workflows. They are the benchmark for enterprise AI execution."</p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-user">
+                    <div class="user-avatar">
+                      <svg viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="18" fill="var(--bg-primary)"></circle>
+                        <circle cx="18" cy="14" r="6" fill="url(#logo-blue)"></circle>
+                        <path d="M8 28c0-5 6-6 10-6s10 1 10 6" fill="url(#logo-blue)"></path>
+                      </svg>
+                    </div>
+                    <div class="user-info">
+                      <h4>Marcus Chen</h4>
+                      <p>Director of Operations, Vortex AI</p>
+                    </div>
+                  </div>
+                  <div class="client-logo">VORTEX AI</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">"Their zero-trust security audit gave our clients complete operational confidence. Nishi Solutions isn't just a dev vendor; they are our primary strategic partners."</p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-user">
+                    <div class="user-avatar">
+                      <svg viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="18" fill="var(--bg-primary)"></circle>
+                        <circle cx="18" cy="14" r="6" fill="url(#logo-green)"></circle>
+                        <path d="M8 28c0-5 6-6 10-6s10 1 10 6" fill="url(#logo-green)"></path>
+                      </svg>
+                    </div>
+                    <div class="user-info">
+                      <h4>Helena Rostova</h4>
+                      <p>CTO, Quantum Data</p>
+                    </div>
+                  </div>
+                  <div class="client-logo">QUANTUM DATA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-nav">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="carousel-dots">
+              <span class="carousel-dot active" data-slide="0"></span>
+              <span class="carousel-dot" data-slide="1"></span>
+              <span class="carousel-dot" data-slide="2"></span>
+            </div>
+            <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-subtitle" style="text-align:left; margin-bottom:1rem;">Get In Touch</span>
+          <h2 class="contact-title" style="margin-bottom:1.5rem; font-size:2rem;">Partner with Nishi Solutions</h2>
+          <p class="contact-text">Ready to transform your enterprise systems? Drop us a message or schedule a direct consultation with our technology team.</p>
+          
+          <div class="contact-details">
+            <!-- Email -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Email</h4>
+                <a href="mailto:info@nishisolutions.com">info@nishisolutions.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Phone</h4>
+                <p>+1 (800) 555-0199</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Office Location</h4>
+                <p>One World Trade Center, Suite 85, New York, NY 10007</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter Profile"><i data-lucide="twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+          </div>
+        </div>
+
+        <!-- Premium Inquiry Form -->
+        <div class="glass-panel inquiry-form-panel" style="position:relative;">
+          <form id="inquiry-form" novalidate>
+            <div class="form-group">
+              <input type="text" class="form-input" id="form-name" placeholder=" " required>
+              <label class="form-label" for="form-name">Your Name</label>
+              <span class="form-error-msg">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-input" id="form-email" placeholder=" " required>
+              <label class="form-label" for="form-email">Work Email</label>
+              <span class="form-error-msg">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-input" id="form-company" placeholder=" ">
+              <label class="form-label" for="form-company">Company</label>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-input" id="form-message" placeholder=" " required></textarea>
+              <label class="form-label" for="form-message">Tell us about your project</label>
+              <span class="form-error-msg">Please enter a message</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="form-submit-btn">
+              <span>Send Inquiry</span>
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+
+          <!-- Success overlay state -->
+          <div class="form-success-overlay" id="form-success-overlay">
+            <div class="success-icon-box">
+              <i data-lucide="check"></i>
+            </div>
+            <h3 class="success-title">Message Received</h3>
+            <p class="success-desc">Thank you for reaching out. One of our enterprise consultants will contact you within 12 business hours.</p>
+            <button class="btn btn-secondary" id="success-reset-btn">
+              <span>Send Another Message</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <a href="#home" class="logo-wrapper">
+            <img src="logo.png?v=2" alt="Nishi Solutions Logo" class="logo-icon-img">
+            <span class="logo-text">Nishi<span>Solutions</span></span>
+          </a>
+          <p class="footer-desc">Architecting robust intelligent software, multi-cloud platforms, and automated workflow ecosystems for startups and global enterprises.</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">AI Solutions</a></li>
+            <li><a href="#services" class="footer-link">Web Engineering</a></li>
+            <li><a href="#services" class="footer-link">Mobile apps</a></li>
+            <li><a href="#services" class="footer-link">Cloud Architectures</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="footer-links-col">
+          <h4>Contact Information</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">info@nishisolutions.com</span></li>
+            <li><span class="footer-link">+1 (800) 555-0199</span></li>
+            <li><span class="footer-link">One World Trade Center, NYC</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Informed</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1.25rem; color: var(--text-secondary);">Subscribe to our bi-weekly tech digest.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Work Email" required aria-label="Newsletter email input">
+            <button type="submit" class="newsletter-btn" aria-label="Submit newsletter subscription">
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nishi Solutions Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Lenis for Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger for premium animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Vanilla Tilt for premium 3D tilt effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
